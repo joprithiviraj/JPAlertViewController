@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "JPAlertViewController"
   spec.version      = "0.0.1"
-  spec.summary      = "This is for Custom AlertViewController to use easily and also added alomofire framework you can access too"
+  spec.summary      = "A CocoaPods library written in Swift"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "JPAlertViewController/**/*.{h,m}"
+  spec.source_files  = "JPAlertViewController/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
