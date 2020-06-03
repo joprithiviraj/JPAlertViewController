@@ -8,6 +8,7 @@ target 'JPAlertViewController' do
   # Pods for JPAlertViewController
 
 	pod 'Alamofire'
+	pod 'RxSwift'
 
   target 'JPAlertViewControllerTests' do
     # Pods for testing

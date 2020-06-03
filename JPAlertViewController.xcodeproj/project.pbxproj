@@ -10,6 +10,7 @@
 		6AD2ECAF24877BCC0088D383 /* JPAlertViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD2ECA524877BCB0088D383 /* JPAlertViewController.framework */; };
 		6AD2ECB424877BCC0088D383 /* JPAlertViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2ECB324877BCC0088D383 /* JPAlertViewControllerTests.swift */; };
 		6AD2ECB624877BCC0088D383 /* JPAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD2ECA824877BCB0088D383 /* JPAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AD2ECC02487CF820088D383 /* JPAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2ECBF2487CF820088D383 /* JPAlertManager.swift */; };
 		B1FCB1086162AC2FE67D9AC2 /* Pods_JPAlertViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD25280D722E6F7B35FFC0C4 /* Pods_JPAlertViewController.framework */; };
 		C20DCDB0ABB7A5AEAE4B751A /* Pods_JPAlertViewController_JPAlertViewControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB471E705337B38BC2DE346E /* Pods_JPAlertViewController_JPAlertViewControllerTests.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		6AD2ECAE24877BCC0088D383 /* JPAlertViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPAlertViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD2ECB324877BCC0088D383 /* JPAlertViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPAlertViewControllerTests.swift; sourceTree = "<group>"; };
 		6AD2ECB524877BCC0088D383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AD2ECBF2487CF820088D383 /* JPAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPAlertManager.swift; sourceTree = "<group>"; };
 		8403B30D2EFA4D2FD00A57EE /* Pods-JPAlertViewController-JPAlertViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPAlertViewController-JPAlertViewControllerTests.release.xcconfig"; path = "Target Support Files/Pods-JPAlertViewController-JPAlertViewControllerTests/Pods-JPAlertViewController-JPAlertViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB471E705337B38BC2DE346E /* Pods_JPAlertViewController_JPAlertViewControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JPAlertViewController_JPAlertViewControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9B18D972A940777E901834 /* Pods-JPAlertViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPAlertViewController.debug.xcconfig"; path = "Target Support Files/Pods-JPAlertViewController/Pods-JPAlertViewController.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				0178F87E44BE8EE918D5CA90 /* Pods-JPAlertViewController-JPAlertViewControllerTests.debug.xcconfig */,
 				8403B30D2EFA4D2FD00A57EE /* Pods-JPAlertViewController-JPAlertViewControllerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				6AD2ECA824877BCB0088D383 /* JPAlertViewController.h */,
+				6AD2ECBF2487CF820088D383 /* JPAlertManager.swift */,
 				6AD2ECA924877BCB0088D383 /* Info.plist */,
 			);
 			path = JPAlertViewController;
@@ -160,6 +162,7 @@
 				6AD2ECAA24877BCC0088D383 /* Sources */,
 				6AD2ECAB24877BCC0088D383 /* Frameworks */,
 				6AD2ECAC24877BCC0088D383 /* Resources */,
+				EE8BCB4210BF63758319D9E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +186,7 @@
 				TargetAttributes = {
 					6AD2ECA424877BCB0088D383 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					6AD2ECAD24877BCC0088D383 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -270,6 +274,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EE8BCB4210BF63758319D9E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JPAlertViewController-JPAlertViewControllerTests/Pods-JPAlertViewController-JPAlertViewControllerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JPAlertViewController-JPAlertViewControllerTests/Pods-JPAlertViewController-JPAlertViewControllerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JPAlertViewController-JPAlertViewControllerTests/Pods-JPAlertViewController-JPAlertViewControllerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD2ECC02487CF820088D383 /* JPAlertManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB9B18D972A940777E901834 /* Pods-JPAlertViewController.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -438,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prithiviraj.JPAlertViewController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E35A0D6E5649E799093F7745 /* Pods-JPAlertViewController.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -471,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0178F87E44BE8EE918D5CA90 /* Pods-JPAlertViewController-JPAlertViewControllerTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JPAlertViewControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8403B30D2EFA4D2FD00A57EE /* Pods-JPAlertViewController-JPAlertViewControllerTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JPAlertViewControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
