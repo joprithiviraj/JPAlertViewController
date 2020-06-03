@@ -1,0 +1,6 @@
+framework module Pods_JPAlertViewController_JPAlertViewControllerTests {
+  umbrella header "Pods-JPAlertViewController-JPAlertViewControllerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
