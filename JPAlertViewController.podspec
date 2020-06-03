@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "JPAlertViewController"
   spec.version      = "0.0.1"
-  spec.summary      = "This is for Custom AlertViewController to use easily"
+  spec.summary      = "This is for Custom AlertViewController to use easily and also added alomofire framework you can access too"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
