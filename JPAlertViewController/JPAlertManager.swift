@@ -39,7 +39,6 @@ class JPAlertManager: NSObject {
     
     func showVCAlertWithTitle(title: String, message: String, onView:UIViewController) {
         self.alertViewController(title: title, message: message)
-        UIApplication.shared.
         UIApplication.shared.keyWindow?.rootViewController?.present(commonAlertController, animated: true, completion: nil)
     }
     
