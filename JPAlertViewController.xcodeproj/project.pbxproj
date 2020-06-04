@@ -73,9 +73,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6A12849F2489091400FCA6F0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6A12849C2488EFCE00FCA6F0 /* JPAlertViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		6AD2EC9B24877BCB0088D383 = {
 			isa = PBXGroup;
 			children = (
+				6A12849F2489091400FCA6F0 /* Source */,
 				6AD2ECA724877BCB0088D383 /* JPAlertViewController */,
 				6AD2ECB224877BCC0088D383 /* JPAlertViewControllerTests */,
 				6AD2ECA624877BCB0088D383 /* Products */,
@@ -98,7 +107,6 @@
 			children = (
 				6AD2ECA824877BCB0088D383 /* JPAlertViewController.h */,
 				6AD2ECA924877BCB0088D383 /* Info.plist */,
-				6A12849C2488EFCE00FCA6F0 /* JPAlertViewController.swift */,
 			);
 			path = JPAlertViewController;
 			sourceTree = "<group>";
