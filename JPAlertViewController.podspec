@@ -41,7 +41,7 @@ JPAlertViewController is a common class to displaying the alert view.
 
   #spec.license      = "MIT (example)"
    spec.license      = { :type => "MIT", :file => "LICENSE" }
-
+   spec.dependency 'RxSwift'
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
